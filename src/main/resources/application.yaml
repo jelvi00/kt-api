@@ -1,0 +1,15 @@
+ktor:
+    deployment:
+        port: "${PORT:8080}"
+    application:
+        modules:
+            - dom.cifra.ApplicationKt.module
+
+database:
+    driver: "org.postgresql.Driver"
+    url: "jdbc:postgresql://localhost:5432/postgres"
+    user: "admin"
+    password: "admin"
+
+paseto:
+    secret_key: "${PASETO_SECRET:jGSRU6YXEstL2CaJGzbZFGw2r17lNLDO}"
