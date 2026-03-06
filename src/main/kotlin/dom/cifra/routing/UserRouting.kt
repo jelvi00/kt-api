@@ -1,5 +1,6 @@
 package dom.cifra.routing
 
+import dom.cifra.constants.Routes
 import io.ktor.http.HttpStatusCode
 import io.ktor.server.response.respond
 import io.ktor.server.routing.*
@@ -13,13 +14,13 @@ fun Route.userRouting() {
     val userService by inject<UserService>()
 
     authenticate("paseto-auth") {
-        route("/users") {
+        route(Routes.User.MANY) {
             get {
                 call.respond(userService.getAllUsers())
             }
         }
 
-        route("/users/{id}/detail") {
+        route(Routes.User.DETAIL) {
             get {
                 val id = call.parameters["id"]?.toIntOrNull()
 
