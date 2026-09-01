@@ -4,7 +4,7 @@ import dom.cifra.dto.UserDTO
 import dom.cifra.repo.UserRepository
 import dom.cifra.security.PasetoManager
 import dom.cifra.util.PasswordUtil
-import org.example.dom.cifra.request.RegisterRequest
+import dom.cifra.request.RegisterRequest
 
 class AuthService(private val userRepository: UserRepository, private val pasetoManager: PasetoManager) {
 

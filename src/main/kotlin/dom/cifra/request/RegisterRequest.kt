@@ -1,4 +1,4 @@
-package org.example.dom.cifra.request
+package dom.cifra.request
 
 import dom.cifra.model.User
 import kotlinx.serialization.Serializable

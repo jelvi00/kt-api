@@ -10,7 +10,7 @@ import io.ktor.server.request.receive
 
 import io.ktor.server.response.respond
 import io.ktor.server.routing.*
-import org.example.dom.cifra.request.RegisterRequest
+import dom.cifra.request.RegisterRequest
 import org.koin.ktor.ext.inject
 
 
